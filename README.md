@@ -1,6 +1,8 @@
-Nome:
+Nome: Giulia Barbieri Quajliano
 
-RA:
+
+RA: 10338326
+
 
 Nome: Jenifer Mathias dos Santos
 
