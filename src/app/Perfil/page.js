@@ -48,7 +48,7 @@ function Perfil() {
       >
         <div>
           &nbsp;
-          <Link href="/Metas">
+          <Link href="/Perfil/Metas">
             <div className="balao" style={{ width: "200px", height: "200px" }}>
               <div>Minhas Metas</div>
             </div>
@@ -57,7 +57,7 @@ function Perfil() {
         </div>
         <div>
           &nbsp;
-          <Link href="/Analise">
+          <Link href="/Perfil/Analise">
             <div className="balao" style={{ width: "200px", height: "200px" }}>
               <div>Analise de desempenho</div>
             </div>

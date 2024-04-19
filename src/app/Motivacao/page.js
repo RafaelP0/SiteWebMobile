@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar";
 import "../App.css";
+
 const urlImg =
   "https://th.bing.com/th/id/OIP.tsAQp62goCuROpSVjYT-BQAAAA?rs=1&pid=ImgDetMain";
 
