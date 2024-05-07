@@ -1,6 +1,6 @@
 "use client"
 
-import "./menu.css";
+import styles from "./menu.module.css";
 import "../app/App.css";
 
 import Link from "next/link";
@@ -9,21 +9,22 @@ import Link from "next/link";
 import { useState } from "react";
 
 function Menu() {
-  let [name, setName] = useState("nada");
+  let [name, setName] = useState(styles.nada);
 
   function clickAdd() {
-    setName("menu");
+    setName(styles.menu);
   }
   function clickSub() {
-    setName("nada");
+    setName(styles.nada);
   }
   // const name = "menu";
-  if (name == "nada") {
+  if (name == styles.nada) {
     return (
       <div>
         <div className={name}>
           <button onClick={clickAdd}>Menu</button>
         </div>
+       
       </div>
     );
   } else {
@@ -43,7 +44,7 @@ function Menu() {
             &nbsp;
 
           </div>
-          <div className="nada">
+          <div className={styles.nada}>
             <button onClick={clickSub}>Fechar menu</button>
           </div>
         </div>

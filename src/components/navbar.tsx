@@ -1,16 +1,16 @@
 import Menu from "./menu";
 import LogProf from "./logProf";
 import Link from "next/link";
-import "../app/App.css";
+import styles from "./navbar.module.css"
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className={styles.navbar}>
       <div>
         <Menu />
         <LogProf nome="naoLogado" />
         <div>
-          <div className={"logado"}>
+          <div className={styles.logado}>
             <Link href="/Perfil">
               <button>Perfil</button>
             </Link>
