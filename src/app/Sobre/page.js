@@ -1,11 +1,11 @@
 import Navbar from "../../components/navbar";
-import "../App.css";
+import styles from "./page.module.css";
 
 const mack =
   "https://cdn.falauniversidades.com.br/wp-content/uploads/2019/09/mackenzie-1200x800.jpg";
 function Sobre() {
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <h1>Sobre o nosso projeto</h1>
@@ -19,7 +19,7 @@ function Sobre() {
       </div>
       <h1> Aqui pra digitar abaixo da imagem</h1>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
     </main>
   );
 }

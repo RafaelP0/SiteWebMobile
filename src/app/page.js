@@ -12,18 +12,17 @@
 
 
 import React from "react";
-import "./App.css";
 import Navbar from "../components/navbar";
 import Link from "next/link";
-
+import styles from "./page.module.css";
 
 
 const urlImg = "https://www.ssp.sc.gov.br/images/Imagens/Programas-PROERD.png";
 
 export default function Home() {
   return (
-    <main className="bg">
-      <Navbar />
+    <main className={styles.bg}>
+        <Navbar />
       <div
         style={{
           backgroundImage: `url("https://cdn.falauniversidades.com.br/wp-content/uploads/2019/09/mackenzie-1200x800.jpg")`,
@@ -36,6 +35,7 @@ export default function Home() {
         >
           <h1>Projeto Desperta Jovem</h1>
           <div style={{ display: "flex", alignItems: "center" }}>
+            
             <img style={{ width: "40%" }} src={urlImg} alt="Mackenzie" />
             <div>
               <h2>
@@ -76,7 +76,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="barraBaixo"></div>
+      <div className={styles.barraBaixo}></div>
     </main>
   );
 }

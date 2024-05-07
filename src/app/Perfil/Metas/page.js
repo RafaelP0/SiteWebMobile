@@ -1,14 +1,13 @@
 
 "use client"
 
-import "./perfil.css";
 import Checkbox from "../../checkbox/checkbox";
 import Link from "next/link";
 import Navbar from "../../../components/navbar";
 
 import { useState } from "react";
 
-import "../../App.css";
+import styles from "./page.module.css";
 
 function Metas() {
   const [checked, setChecked] = useState(false);
@@ -17,7 +16,7 @@ function Metas() {
     setChecked(!checked);
   };
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <h2>
@@ -42,7 +41,7 @@ function Metas() {
         <div>
           &nbsp;
           <div>
-            <div className="quadrosMaiores">
+            <div className={styles.quadrosMaiores}>
               <Checkbox
                 label="Fumar apenas 1 cigarro por semana"
                 alsuu="Prazo: 05/03/2024"
@@ -53,7 +52,7 @@ function Metas() {
         </div>
         <div>
           <div>
-            <div className="quadrosMaiores">
+            <div className={styles.quadrosMaiores}>
               <Checkbox
                 label="Não beber durante 3 semanas"
                 alsuu="Concluida em: 23/03/2024"
@@ -79,7 +78,7 @@ function Metas() {
         </a>
       </div>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
     </main>
   );
 }

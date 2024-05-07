@@ -1,11 +1,10 @@
 const urlImg = "https://www.ssp.sc.gov.br/images/Imagens/Programas-PROERD.png";
-import "./perfil.css";
 import Navbar from "../../components/navbar";
 import Link from "next/link";
-import "../App.css";
+import styles from "./page.module.css";
 function Atualize() {
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <h1>
@@ -32,7 +31,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aquAi</div>
               </div>
             </Link>
@@ -42,7 +41,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aqui</div>
               </div>
             </Link>
@@ -52,7 +51,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aqui</div>
               </div>
             </Link>
@@ -63,7 +62,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aquAi</div>
               </div>
             </Link>
@@ -73,7 +72,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aqui</div>
               </div>
             </Link>
@@ -83,7 +82,7 @@ function Atualize() {
           <div>
             &nbsp;
             <Link href="https://sdgs.un.org/goals">
-              <div className="balao">
+              <div className={styles.balao}>
                 <div>Preview aqui</div>
               </div>
             </Link>
@@ -92,7 +91,7 @@ function Atualize() {
         </div>
       </div>
     </div>
-      <div className="barraBaixo"></div>
+      <div className={styles.barraBaixo}></div>
     </main>
   );
 }

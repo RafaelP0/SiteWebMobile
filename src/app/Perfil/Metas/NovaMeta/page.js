@@ -1,11 +1,11 @@
-import "./perfil.css";
+
 
 import Navbar from "../../../../components/navbar";
-import "../../../App.css";
-import "../../../Log/LogReg.css";
+import styles from "./page.module.css";
+
 function NovaMeta() {
   return (
-  <main className="bg">
+  <main className={styles.bg}>
   <Navbar />
     <div>
       <h2>
@@ -21,19 +21,19 @@ function NovaMeta() {
           width: "100%",
           height: "100%",
         }}
-        className="back"
+        className={styles.back}
       >
         <div>
           Nome:
-          <input className="box" />
+          <input className={styles.box} />
           Descrição:
-          <input className="box" />
+          <input className={styles.box} />
           Prazo:
-          <input className="box" />
+          <input className={styles.box} />
         </div>
         <div>
           <div
-            className="box"
+            className={styles.box}
             style={{
               backgroundColor: "#4CAF50",
               color: "black",
@@ -46,7 +46,7 @@ function NovaMeta() {
         </div>
       </div>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
 
     </main>
   );

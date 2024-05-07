@@ -1,9 +1,9 @@
 
 import Navbar from "../../../components/navbar";
-import "../../App.css";
+import styles from "./page.module.css";
 function Analise() {
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <h2>
@@ -26,7 +26,7 @@ function Analise() {
         </div>
       </h2>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
     </main>
   );
 }

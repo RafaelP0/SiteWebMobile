@@ -1,11 +1,11 @@
 const urlImg = "https://www.ssp.sc.gov.br/images/Imagens/Programas-PROERD.png";
-import "./perfil.css";
+
 import Link from "next/link";
 import Navbar from "../../components/navbar";
-import "../App.css";
+import styles from "./page.module.css";
 function Perfil() {
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div
       style={{
@@ -27,7 +27,7 @@ function Perfil() {
           src={urlImg}
           alt="Mackenzie"
         />
-        <div className="info">
+        <div className={styles.info}>
           &nbsp;
           <h2>SEU NOME</h2>
           <h2>SEU TIA/RA</h2>
@@ -49,7 +49,7 @@ function Perfil() {
         <div>
           &nbsp;
           <Link href="/Perfil/Metas">
-            <div className="balao" style={{ width: "200px", height: "200px" }}>
+            <div className={styles.balao} style={{ width: "200px", height: "200px" }}>
               <div>Minhas Metas</div>
             </div>
           </Link>
@@ -58,7 +58,7 @@ function Perfil() {
         <div>
           &nbsp;
           <Link href="/Perfil/Analise">
-            <div className="balao" style={{ width: "200px", height: "200px" }}>
+            <div className={styles.balao} style={{ width: "200px", height: "200px" }}>
               <div>Analise de desempenho</div>
             </div>
           </Link>
@@ -67,12 +67,12 @@ function Perfil() {
         <div>
           &nbsp;
           <Link href="/Atualize">
-            <div className="balao" style={{ width: "200px", height: "200px" }}>
+            <div className={styles.balao} style={{ width: "200px", height: "200px" }}>
               <div>Se atualize!</div>
             </div>
           </Link>
           &nbsp;
-          <div className="box" style={{ height: "100%", width: "40%" }}>
+          <div className={styles.box} style={{ height: "100%", width: "40%" }}>
             <Link href="/" style={{ color: "black" }}>
               Sair:{" "}
             </Link>
@@ -80,7 +80,7 @@ function Perfil() {
         </div>
       </div>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
     </main>
   );
 }

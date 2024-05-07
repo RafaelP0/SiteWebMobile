@@ -6,39 +6,7 @@
   text-align: center;
 }
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: black;
-  /* background-color: #242424; */
-  background-color: hsl(0, 3%, 64%);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* .color {
-  display: flex;
-  backgroundcolor: hsl(0, 3%, 60%);
-  color: white;
-
-  padding: 10px;
-  width: 95%;
-  height: 95%;
-
-  align-items: center;
-
-  display: flex;
-
-  top: 0;
-  left: 0;
-  padding: 1em;
-} */
 
 .imagem {
   width: 100px;
@@ -85,6 +53,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  padding: 1em;
   display: flex;
   justify-content: space-between;
   
@@ -100,3 +69,57 @@
   width: 100%;
   height: 100%;
 }
+
+.back {
+  /* background-color: hsl(0, 3%, 61%); */
+  width: 90%;
+  height: 100%;
+  /* float: left; */
+}
+
+
+.info h2 {
+  margin: 0 auto;
+  align-items: center;
+  background-color: black;
+  width: 110%;
+  height: 110%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.balao {
+  /* background-color: #213b97; */
+
+  width: 150px;
+  height: 150px;
+  background-color: hwb(200 7% 41%);
+  color: hsl(0, 0%, 0%);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+
+  flex-direction: column;
+}
+
+.quadrosMaiores {
+  /* background-color: #213b97; */
+
+  width: 93%;
+  height: 100%;
+  background-color: hwb(200 7% 41%);
+  color: hsl(0, 0%, 0%);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* styles.css */

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Navbar from "../../components/navbar";
-import "../App.css";
+import styles from "./page.module.css";
 const think =
   "https://th.bing.com/th/id/OIP.8FHAaiPW77VYj94SUgxuZAHaH7?rs=1&pid=ImgDetMain";
 function PorQue() {
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <div style={{ display: "flex", alignItems: "center", color: "black" }}>
@@ -51,7 +51,7 @@ function PorQue() {
         &nbsp;
       </div>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixa}></div>
     </main>
   );
 }

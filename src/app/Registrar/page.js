@@ -1,18 +1,17 @@
-import "./LogReg.css";
 import LogProf from "../../components/logProf";
 import Link from "next/link";
 import Navbar from "../../components/navbar";
-import "../App.css";
+import styles from "./page.module.css";
 
 function Registrar() {
  
   return (
-    <main className="bg">
+    <main className={styles.bg}>
       <Navbar />
     <div>
       <>
         <div
-          className="back"
+          className={styles.back}
           style={{
             backgroundColor: "hsl(0, 3%, 61%)",
           }}
@@ -28,18 +27,18 @@ function Registrar() {
             <div>
               <div>
                 <h2>NOME: </h2>
-                <input className="box" />
+                <input className={styles.box} />
                 <h2> E-MAIL: </h2>
-                <input className="box" />
+                <input className={styles.box} />
                 <h2> REPETIR E-MAIL: </h2>
-                <input className="box" />
+                <input className={styles.box} />
                 <h2> SENHA: </h2>
-                <input className="box" />
+                <input className={styles.box} />
                 <h2> REPETIR SENHA: </h2>
-                <input className="box" />
+                <input className={styles.box} />
               </div>
             </div>
-            <div className="botao">
+            <div className={styles.botao}>
               <a href="/Perfil" >
                 Registrar
               </a>
@@ -49,7 +48,7 @@ function Registrar() {
         </div>
       </>
     </div>
-    <div className="barraBaixo"></div>
+    <div className={styles.barraBaixo}></div>
     </main>
   );
 }

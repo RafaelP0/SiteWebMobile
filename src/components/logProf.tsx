@@ -14,6 +14,7 @@ function LogProf({nome}) {
 
   // const name = "menu";
   if (nome == "naoLogado") {
+    
     return (
       <div className={nome}>
         <div>
