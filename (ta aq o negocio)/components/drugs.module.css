@@ -1,0 +1,32 @@
+.widget {
+    background-color: rgb(117, 101, 101);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.widget div {
+    background-color: rgb(238, 230, 230);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 200px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.widget b {
+    font-size: 2em;
+}
+
+.droga {
+    background: linear-gradient(to right, rgb(111, 224, 255) 0%, rgb(45, 181, 218) 50%, rgb(0, 151, 192) 100%); border-radius: 16px; height: 7px; max-width: 100%; transition: width 0.35s ease-in-out 0s; transform: translateZ(0px); width: 48%;
+}
