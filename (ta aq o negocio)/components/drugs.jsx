@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useEffect, useState } from "react";
@@ -29,16 +30,35 @@ export default function Drugs() {
       <p>Carregando...</p>
     ) : (
       <>
-        {/* Renderize os dados da API aqui */}
-        {weather.results.map((result)  => (
-          <div key={result.term}>
+        {weather.results.map((result) => (
+          <div key={result.term} style={{
+            backgroundColor: "hsl(0, 3%, 60%, 0.7)",
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+          }}>
+            <div className={styles.able}>
             <p>Reação: {result.term}</p>
-            <p>Contagem: {result.count}</p>
+            {/* <p>Contagem: {result.count}</p> */}
+            
+            <div className={styles.barChart}>
+              <div
+                key={result.term}
+                className={styles.bar}
+                style={{ width: `${result.count / 1100}px` }}
+              >
+                
+                {result.count}
+            </div>
+            </div>
+          
+        </div>
           </div>
         ))}
+        
       </>
     );
 
   return <article className={styles.widget}>{content}</article>;
 }
-

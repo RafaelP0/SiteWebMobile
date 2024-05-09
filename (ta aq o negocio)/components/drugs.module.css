@@ -2,31 +2,78 @@
     background-color: rgb(117, 101, 101);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     border-radius: 20px;
-    width: 200px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+/* .widget div {
+    background-color: rgb(238, 230, 230);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-}
-.widget div {
-    background-color: rgb(238, 230, 230);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-    border-radius: 20px;
-    width: 200px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-wrap: wrap;
-    padding: 10px;
     margin-bottom: 20px;
-}
+}  */
+
+.able {
+    background-color: rgb(238, 230, 230,0.3);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+ 
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+} 
 
 
 .widget b {
+    
     font-size: 2em;
+}
+.widget p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .droga {
-    background: linear-gradient(to right, rgb(111, 224, 255) 0%, rgb(45, 181, 218) 50%, rgb(0, 151, 192) 100%); border-radius: 16px; height: 7px; max-width: 100%; transition: width 0.35s ease-in-out 0s; transform: translateZ(0px); width: 48%;
+    background: linear-gradient(to right, rgb(111, 224, 255) 0%, rgb(45, 181, 218) 50%, rgb(0, 151, 192) 100%);
+     border-radius: 16px; 
+     height: 7px; 
+     max-width: 100%; 
+     transition: width 0.35s ease-in-out 0s; 
+     transform: translateZ(0px); 
+     width: 48%;
 }
+
+.barChart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px; 
+    max-width: 80%; 
+
+  }
+  
+.bar {
+    height: 100%; 
+    background-color: #0074d9;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    /* margin-bottom: 0; */
+  }
+  
