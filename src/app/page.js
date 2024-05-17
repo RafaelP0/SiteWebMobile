@@ -17,7 +17,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 
-const urlImg = "https://www.ssp.sc.gov.br/images/Imagens/Programas-PROERD.png";
+const urlImg = "https://unitape.com.br/wp-content/uploads/2018/10/59edbc68fcade3b1ebff1023ea1ea46c.png";
 
 export default function Home() {
   return (
@@ -39,9 +39,11 @@ export default function Home() {
             <img style={{ width: "40%" }} src={urlImg} alt="Mackenzie" />
             <div>
               <h2>
-                Nosso projeto visa conscientizar alunos da faculdade mackenzie
+                Nosso projeto visa conscientizar alunos da faculdade mackenzie a respeito do abuso de substâncias
               </h2>
-              <h2>bla bla bla</h2>
+              <h2>Objetivo 3 da ONU: Assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades.
+                Meta 3.5: Reforçar a prevenção e o tratamento do abuso de substâncias, incluindo o abuso de drogas entorpecentes
+                e uso nocivo do álcool</h2>
             </div>
           </div>
         </div>

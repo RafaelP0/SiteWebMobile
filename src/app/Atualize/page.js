@@ -30,7 +30,7 @@ function Atualize() {
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div>
             &nbsp;
-            <Link href="https://sdgs.un.org/goals">
+            <Link href="hhttps://www.who.int/data/gho/data/themes/resources-for-substance-use-disorders">
               <div className={styles.balao}>
                 <div>Preview aquAi</div>
               </div>
