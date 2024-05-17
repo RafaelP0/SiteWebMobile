@@ -1,4 +1,6 @@
 Fazer NPM install
+npm install uuid
+npm instal json-server
 -------------------------------------------------
 
 
