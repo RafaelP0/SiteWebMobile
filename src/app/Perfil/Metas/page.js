@@ -1,31 +1,49 @@
 
 "use client"
 
-import Checkbox from "../../checkbox/checkbox";
+import Checkbox from "../../../components/checkbox.tsx";
 import Link from "next/link";
-import Navbar from "../../../components/navbar";
+import { getGoals} from "../../../utils/api.js"
+import { v4 as uuid } from "uuid"
 
-import { useState } from "react";
+import Navbar from "../../../components/navbar";
+import Goal from "../../../components/goal";
+
+import { useEffect, useState } from "react";
 
 import styles from "./page.module.css";
 
+
+
 function Metas() {
+  
+  const [goals, setGoals] = useState(null)
   const [checked, setChecked] = useState(false);
+
+
+
+
+  useEffect( ()=>{
+    getGoals()
+    .then( (data) => setGoals(data) )
+  }, [] )
 
   const onChange = () => {
     setChecked(!checked);
   };
+
+
   return (
     <main className={styles.bg}>
       <Navbar />
     <div>
-      <h2>
-        <h1 style={{ display: "flex", alignItems: "center", color: "black" }}>
+      <h1>
+        <div style={{ display: "flex", alignItems: "center", color: "black" }}>
           Minhas metas
-        </h1>
+        </div>
         Aqui você acompanha suas metas e objetivos para diminuir o consumo de
         drogas lícitas!
-      </h2>
+      </h1>
 
       <div
         style={{
@@ -38,47 +56,38 @@ function Metas() {
           flexDirection: "column",
         }}
       >
-        <div>
-          &nbsp;
-          <div>
-            <div className={styles.quadrosMaiores}>
-              <Checkbox
-                label="Fumar apenas 1 cigarro por semana"
-                alsuu="Prazo: 05/03/2024"
-              />
-            </div>
-          </div>
-          &nbsp;
-        </div>
-        <div>
-          <div>
-            <div className={styles.quadrosMaiores}>
-              <Checkbox
-                label="Não beber durante 3 semanas"
-                alsuu="Concluida em: 23/03/2024"
-              />
-            </div>
-          </div>
-          &nbsp;
-        </div>
-      </div>
-      <div
+        <Link href={`/Perfil/Metas/AtualizarMeta` } ><button>EDITAR ALGUMA META</button></Link>
+        <div
         style={{
-          width: "100%",
+          width: "10%",
 
           backgroundColor: "white",
           border: "2px solid #333",
+          alignItems: "center",
         }}
       >
-        <a
+        <Link
           href="/Perfil/Metas/NovaMeta"
           style={{ display: "flex", alignItems: "center", color: "black" }}
         >
           &nbsp; &nbsp; Cadastrar meta
-        </a>
+        </Link>
       </div>
+        <section className={styles.quadrosMaiores}>
+        
+          { goals 
+              ? ( goals.map( (q) =><>   <Goal goal={q} /> </>) ) 
+              : (<p>Loading...</p>) }
+              
+        </section>
+
+
+
+      </div>
+      
     </div>
-    <div className={styles.barraBaixo}></div>
+    <br/>
+    {/* <div className={styles.barraBaixo}></div> */}
     </main>
   );
 }
