@@ -4,19 +4,28 @@
       "id": "2",
       "meta": "Beber menos",
       "dataMes": "01",
-      "dataAno": "24"
+      "dataAno": "24",
+      "box": false
     },
     {
       "id": "3",
       "meta": "Fumar menos",
       "dataMes": "05",
-      "dataAno": "24"
+      "dataAno": "24",
+      "box": true
     },
     {
       "id": "e41622ae-f6e1-4611-8952-70ae6c0b88b4",
-      "meta": "Fumar mais, wee",
-      "dataMes": "22",
-      "dataAno": "33"
+      "meta": "Prestar mais atenção no quanto eu bebo durante a festa da Samantha",
+      "dataMes": "4",
+      "dataAno": "2024",
+      "box": false
+    },
+    {
+      "id": "2c1571a4-edee-471c-b3e5-f9efad04adb2",
+      "meta": "Descrição-Meta",
+      "dataMes": "Mes",
+      "dataAno": "Ano"
     }
   ]
 }
