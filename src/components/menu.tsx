@@ -1,7 +1,6 @@
 "use client"
 
 import styles from "./menu.module.css";
-import "../app/App.css";
 
 import Link from "next/link";
 
