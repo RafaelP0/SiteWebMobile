@@ -1,7 +1,6 @@
 
 
 
-import "../app/App.css";
 import "./logProf.css";
 import Link from "next/link";
 
